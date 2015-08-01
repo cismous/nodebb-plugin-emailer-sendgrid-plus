@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-plugin-emailer-sendgrid",
+	"id": "nodebb-plugin-emailer-sendgrid-plus",
 	"library": "./index.js",
     "templates": "templates",
     "hooks": [

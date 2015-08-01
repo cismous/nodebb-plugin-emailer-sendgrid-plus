@@ -1,4 +1,4 @@
-nodebb-plugin-emailer-sendgrid
+nodebb-plugin-emailer-sendgrid-plus
 ==============================
 
 This NodeBB plugin allows NodeBB to send emails to users through the third-party transactional email service [SendGrid](https://sendgrid.com).
@@ -7,4 +7,4 @@ To customise options for this plugin, please consult the "Emailer (SendGrid)" pa
 
 ## Installation
 
-    npm install nodebb-plugin-emailer-sendgrid
+    npm install nodebb-plugin-emailer-sendgrid-plus

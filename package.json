@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-plugin-emailer-sendgrid",
+  "name": "nodebb-plugin-emailer-sendgrid-plus",
   "version": "1.1.1",
   "description": "An emailer plugin for NodeBB using SendGrid as a third party service",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianlam/nodebb-plugin-emailer-sendgrid"
+    "url": "https://github.com/cismous/nodebb-plugin-emailer-sendgrid-plus"
   },
   "keywords": [
     "nodebb",
@@ -13,12 +13,12 @@
     "emailer",
     "SendGrid"
   ],
-  "author": "Julian Lam <julian@nodebb.org>",
+  "author": "Cismous <cismous@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julianlam/nodebb-plugin-emailer-sendgrid/issues"
+    "url": "https://github.com/cismous/nodebb-plugin-emailer-sendgrid-plus/issues"
   },
-  "homepage": "https://github.com/julianlam/nodebb-plugin-emailer-sendgrid",
+  "homepage": "https://github.com/cismous/nodebb-plugin-emailer-sendgrid-plus",
   "dependencies": {
     "sendgrid": "^1.9.0"
   },
