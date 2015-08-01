@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/julianlam/nodebb-plugin-emailer-sendgrid",
   "dependencies": {
-    "sendgrid": "^1.6.0"
+    "sendgrid": "^1.9.0"
   },
   "nbbpm": {
     "compatibility": "^0.6.0"
