@@ -29,13 +29,28 @@ Emailer.init = function(data, callback) {
 
 Emailer.send = function(data) {
 	if (SendGrid) {
-		SendGrid.send({
-			to: data.to,
-			subject: data.subject,
-			from: data.from,
-			text: data.text,
-			html: data.html
-		}, function (err, response) {
+		var email = new SendGrid.Email();
+
+		if (data.to) {
+			email.addTo(data.to);
+		}
+		if (data.subject) {
+			email.setSubject(data.subject);
+		}
+		if (data.from) {
+			email.setFrom(data.from);
+		}
+		if (data.text) {
+			email.setText(data.text);
+		}
+		if (data.html) {
+			email.setHtml(data.html);
+		}
+		if (data.trackId) {
+			email.setUniqueArgs({trackId: data.trackId});
+		}
+
+		SendGrid.send(email, function (err, response) {
 			if (!err) {
 				winston.info('[emailer.sendgrid] Sent `' + data.template + '` email to uid ' + data.uid);
 			} else {
